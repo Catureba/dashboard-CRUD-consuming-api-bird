@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="conteiner">
+
+    <div class="box-list">
+      <h2>List of Birds</h2>
+      <div id="card" class="card" style="width: 18rem;">
+        <img id="card_image" src="https://static6.depositphotos.com/1000847/647/i/600/depositphotos_6474531-stock-photo-eagle-close-up.jpg" class="card-img-top" alt="imagem de aguia">
+        <div class="card-body">
+          <h5 id="card_name" class="card-title">Name</h5>
+          <a href="" id="button_edit" class="btn btn-primary">Edit</a>
+          <a href="" id="button_delete" class="btn btn-primary">Delete</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="box-main">
+      <div class="left-side">
+        
+          <h2>Search</h2>
+        <div class="input-group">
+          <input type="text" id="search" class="form-control" placeholder="Id of Bird">
+          <button class="btn btn-outline-secondary" onclick="search()" type="submit">Search</button>
+        </div>
+        
+      </div>
+      <div class="right-side">
+        <h2>Register</h2>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+          <input id="input_name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">url image</span>
+          <input id="input_image" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="btn btn-primary">
+          <a id="submit_Post_button" onclick="register()">
+            Register
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+

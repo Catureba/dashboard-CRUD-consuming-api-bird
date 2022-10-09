@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFEEA;
+}
+.box-main{
+    position: relative;
+    width: 80vw;
+    margin: 50px auto 0;
+}
+.left-side{
+    position: absolute;
+    left: 0px;
+    width: 47%;
+}
+.btn-outline-secondary{
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+.btn-outline-secondary:hover{
+    background-color: #0B5ED7;
+}
+.right-side{
+    position: absolute;
+    right: 0px;
+    width: 47%;
+}
+.button-style button:hover{
+    background-color:  #FFFEEA;
+    border: 2px solid #5a2e2e;
+    border-radius: 8px;
+    color: #5a2e2e;
+}
+.box-list{
+    text-align: center;
+    position: relative;
+    width: 80vw;
+    margin: 50px auto 0;
+}
+.card-body{
+    text-align: center;
+}
+.box-list .card{
+    margin: 0 auto;
+}
